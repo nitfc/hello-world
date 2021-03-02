@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost/posts/getting-started/</loc>
+    <lastmod>2020-07-15T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/posts/sticky/</loc>
+    <lastmod>2020-06-13T00:06:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/Documentation/</loc>
+    <lastmod>2020-07-15T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/posts/</loc>
+    <lastmod>2020-07-15T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/</loc>
+    <lastmod>2020-07-15T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/</loc>
+    <lastmod>2020-07-15T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/posts/markdown/</loc>
+    <lastmod>2020-07-13T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/posts/emojies/</loc>
+    <lastmod>2020-07-13T19:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/Development/</loc>
+    <lastmod>2020-06-22T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/Open-Source/</loc>
+    <lastmod>2020-06-22T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/posts/post-with-images/</loc>
+    <lastmod>2020-06-22T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/posts/post-short/</loc>
+    <lastmod>2020-06-22T20:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost/contact/</loc>
+  </url>
+  
+</urlset>

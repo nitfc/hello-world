@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source on ギークブログ</title>
+    <link>http://localhost/tags/Open-Source/</link>
+    <description>Recent content in Open Source on ギークブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Jun 2020 20:00:00 +0200</lastBuildDate><atom:link href="http://localhost/tags/Open-Source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple sticky posts</title>
+      <link>http://localhost/posts/sticky/</link>
+      <pubDate>Sat, 13 Jun 2020 00:06:00 +0200</pubDate>
+      
+      <guid>http://localhost/posts/sticky/</guid>
+      <description>&lt;p&gt;Sticky (or pinned) posts implementation is currently really simple and handled by &lt;code&gt;weight: 1&lt;/code&gt; in a post front matter.&lt;/p&gt;
+&lt;p&gt;$$ e^{\pi i} = \sqrt{2} $$&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Post with images</title>
+      <link>http://localhost/posts/post-with-images/</link>
+      <pubDate>Mon, 22 Jun 2020 20:00:00 +0200</pubDate>
+      
+      <guid>http://localhost/posts/post-with-images/</guid>
+      <description>Amalia id per in minimum facility, quid facet modifier ea ma. Ill um select ma ad, en ferric patine sentient vim. Per expendable foreordained interpretations cu, maxim sole pertinacity in ram. Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture. Ornateness bland it ex enc, est yeti am bongo detract re. Pro ad prompts feud gait, quid exercise emeritus bis e. In pro quints consequent, denim fastidious copious quo ad.</description>
+    </item>
+    
+  </channel>
+</rss>

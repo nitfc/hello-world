@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
+    </head>
+    <body style="margin:0;padding:0">
+        <script>
+            let img;
+
+            function preload() {
+                img = loadImage('draw.svg');
+            }
+
+            function setup() {
+                createCanvas(windowWidth, windowHeight, WEBGL);
+            }
+
+            function draw() {
+                background(220);
+                translate(100, frameCount % (windowHeight + 100) - windowHeight / 2 - 50);
+                rotate(frameCount * 0.05);
+                imageMode(CENTER);
+                image(img, 0, 0, 150, 150);
+            }
+
+            //  ウインドウサイズに合わせてキャンバスをリサイズ
+            function windowResized() {
+                resizeCanvas(windowWidth, windowHeight);
+            }
+        </script>
+    </body>
+</html>
