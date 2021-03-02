@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on ギークブログ</title>
-    <link>http://localhost/tags/Development/</link>
+    <link>https://nitfc.github.io/hello-world/tags/Development/</link>
     <description>Recent content in Development on ギークブログ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Jun 2020 20:00:00 +0200</lastBuildDate><atom:link href="http://localhost/tags/Development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Jun 2020 20:00:00 +0200</lastBuildDate><atom:link href="https://nitfc.github.io/hello-world/tags/Development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post with images</title>
-      <link>http://localhost/posts/post-with-images/</link>
+      <link>https://nitfc.github.io/hello-world/posts/post-with-images/</link>
       <pubDate>Mon, 22 Jun 2020 20:00:00 +0200</pubDate>
       
-      <guid>http://localhost/posts/post-with-images/</guid>
+      <guid>https://nitfc.github.io/hello-world/posts/post-with-images/</guid>
       <description>Amalia id per in minimum facility, quid facet modifier ea ma. Ill um select ma ad, en ferric patine sentient vim. Per expendable foreordained interpretations cu, maxim sole pertinacity in ram. Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture. Ornateness bland it ex enc, est yeti am bongo detract re. Pro ad prompts feud gait, quid exercise emeritus bis e. In pro quints consequent, denim fastidious copious quo ad.</description>
     </item>
     
     <item>
       <title>Short post</title>
-      <link>http://localhost/posts/post-short/</link>
+      <link>https://nitfc.github.io/hello-world/posts/post-short/</link>
       <pubDate>Mon, 22 Jun 2020 20:00:00 +0200</pubDate>
       
-      <guid>http://localhost/posts/post-short/</guid>
+      <guid>https://nitfc.github.io/hello-world/posts/post-short/</guid>
       <description>Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture. Ornateness bland it ex enc, est yeti am bongo detract re. Pro ad prompts feud gait, quid exercise emeritus bis e. In pro quints consequent, denim fastidious copious quo ad. Stet probates in duo.</description>
     </item>
     

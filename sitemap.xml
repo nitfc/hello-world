@@ -3,71 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost/posts/getting-started/</loc>
+    <loc>https://nitfc.github.io/hello-world/posts/getting-started/</loc>
     <lastmod>2020-07-15T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/posts/sticky/</loc>
+    <loc>https://nitfc.github.io/hello-world/posts/sticky/</loc>
     <lastmod>2020-06-13T00:06:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/tags/Documentation/</loc>
+    <loc>https://nitfc.github.io/hello-world/tags/Documentation/</loc>
     <lastmod>2020-07-15T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/posts/</loc>
+    <loc>https://nitfc.github.io/hello-world/posts/</loc>
     <lastmod>2020-07-15T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/tags/</loc>
+    <loc>https://nitfc.github.io/hello-world/tags/</loc>
     <lastmod>2020-07-15T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/</loc>
+    <loc>https://nitfc.github.io/hello-world/</loc>
     <lastmod>2020-07-15T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/posts/markdown/</loc>
+    <loc>https://nitfc.github.io/hello-world/posts/markdown/</loc>
     <lastmod>2020-07-13T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/posts/emojies/</loc>
+    <loc>https://nitfc.github.io/hello-world/posts/emojies/</loc>
     <lastmod>2020-07-13T19:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/tags/Development/</loc>
+    <loc>https://nitfc.github.io/hello-world/tags/Development/</loc>
     <lastmod>2020-06-22T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/tags/Open-Source/</loc>
+    <loc>https://nitfc.github.io/hello-world/tags/Open-Source/</loc>
     <lastmod>2020-06-22T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/posts/post-with-images/</loc>
+    <loc>https://nitfc.github.io/hello-world/posts/post-with-images/</loc>
     <lastmod>2020-06-22T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/posts/post-short/</loc>
+    <loc>https://nitfc.github.io/hello-world/posts/post-short/</loc>
     <lastmod>2020-06-22T20:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/categories/</loc>
+    <loc>https://nitfc.github.io/hello-world/categories/</loc>
   </url>
   
   <url>
-    <loc>http://localhost/contact/</loc>
+    <loc>https://nitfc.github.io/hello-world/contact/</loc>
   </url>
   
 </urlset>
