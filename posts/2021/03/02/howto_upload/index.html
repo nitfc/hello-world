@@ -10,7 +10,7 @@
 
 
 
-    <meta name="description" content="ギークブログ">
+    <meta name="description" content="ローカルに構築したhugoサイトをgitを用いてgithub.ioで公開する方法の覚書です。mdファイルを含むソースコードはローカルで管理し，githubのリポジトリでは公開するファイルのみを保持します（当面，一人でWebサイトを管理する場合のため。複数人で記事を作成する場合は，ソースコードもgithubで管理するほうが実用的）">
 
 
 
@@ -22,7 +22,7 @@
     
 
 
-    <title>Categories | ギークブログ</title>
+    <title>Hugoで作成したサイトデータをgithub.ioで公開する方法 | ギークブログ</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/hello-world/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/hello-world/favicon/favicon-32x32.png">
@@ -30,15 +30,16 @@
 
     
 
-    <meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://nitfc.github.io/hello-world/categories/" />
-<meta property="og:updated_time" content="2021-03-02T15:49:28+09:00" />
+    <meta property="og:title" content="Hugoで作成したサイトデータをgithub.ioで公開する方法" />
+<meta property="og:description" content="ローカルに構築したhugoサイトをgitを用いてgithub.ioで公開する方法の覚書です。mdファイルを含むソースコードはローカルで管理し，githubのリポジトリでは公開するファイルのみを保持します（当面，一人でWebサイトを管理する場合のため。複数人で記事を作成する場合は，ソースコードもgithubで管理するほうが実用的）" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nitfc.github.io/hello-world/posts/2021/03/02/howto_upload/" />
+<meta property="article:published_time" content="2021-03-02T15:49:28+09:00" />
+<meta property="article:modified_time" content="2021-03-02T15:49:28+09:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Hugoで作成したサイトデータをgithub.ioで公開する方法"/>
+<meta name="twitter:description" content="ローカルに構築したhugoサイトをgitを用いてgithub.ioで公開する方法の覚書です。mdファイルを含むソースコードはローカルで管理し，githubのリポジトリでは公開するファイルのみを保持します（当面，一人でWebサイトを管理する場合のため。複数人で記事を作成する場合は，ソースコードもgithubで管理するほうが実用的）"/>
 
 
     <link rel="preload" as="font" href="/hello-world/fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
@@ -76,6 +77,49 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
     
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "Hugoで作成したサイトデータをgithub.ioで公開する方法",
+    "headline": "Hugoで作成したサイトデータをgithub.ioで公開する方法",
+    "alternativeHeadline": "",
+    "description": "\u003cp\u003eローカルに構築したhugoサイトをgitを用いてgithub.ioで公開する方法の覚書です。mdファイルを含むソースコードはローカルで管理し，githubのリポジトリでは公開するファイルのみを保持します（当面，一人でWebサイトを管理する場合のため。複数人で記事を作成する場合は，ソースコードもgithubで管理するほうが実用的）\u003c\/p\u003e",
+    "inLanguage": "en",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/nitfc.github.io\/hello-world\/posts\/2021\/03\/02\/howto_upload\/"
+    },
+    "author" : [
+    ],
+    "copyrightHolder" : "ギークブログ",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-03-02T15:49:28.00Z",
+    "datePublished": "2021-03-02T15:49:28.00Z",
+    "dateModified": "2021-03-02T15:49:28.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "ギークブログ",
+        "url": "https://nitfc.github.io/hello-world/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/nitfc.github.io\/hello-world\/brand.svg",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "url" : "https:\/\/nitfc.github.io\/hello-world\/posts\/2021\/03\/02\/howto_upload\/",
+    "wordCount" : "151",
+    "genre" : [ "hugo" , "git" ]
+}
+</script>
+
 
     <script src="https://nitfc.github.io/hello-world/js/three.min.js"></script>
 
@@ -243,23 +287,121 @@
 
         <main class="gblog-page container">
             
-    
-    
+    <article class="gblog-post">
+        <header class="gblog-post__header">
+            
+            
+
+            <h1>Hugoで作成したサイトデータをgithub.ioで公開する方法</h1>
+            
+            <div class="gblog-post__meta">
+                <span class="no-wrap">
+                    <svg class="icon date"><use xlink:href="#date"></use></svg>
+                    <span class="gblog-post__tag">
+                        <time datetime="2021-03-02T15:49:28&#43;09:00">
+                            
+                            Mar 2, 2021
+                        </time>
+                    </span>
+                </span>
+
+                <span class="no-wrap">
+                    <svg class="icon timer"><use xlink:href="#timer"></use></svg>
+                    <span class="gblog-post__tag">1 min read</span>
+                </span>
+            </div>
+            
+        </header>
+
+        <section class="gblog-markdown">
+            
+
+
 
     
-    
-    
 
-<nav class="gblog-paging flex flex-even align-center" role="navigation">
-    <div class="gblog-paging__item gblog-paging__item--prev">
-    
-    </div>
-    <div class="gblog-paging__state">Page 1 of 0</div>
-    <div class="gblog-paging__item gblog-paging__item--next">
-    
-    </div>
-</nav>
 
+<p>ローカルに構築したhugoサイトをgitを用いてgithub.ioで公開する方法の覚書です。mdファイルを含むソースコードはローカルで管理し，githubのリポジトリでは公開するファイルのみを保持します（当面，一人でWebサイトを管理する場合のため。複数人で記事を作成する場合は，ソースコードもgithubで管理するほうが実用的）</p>
+<script defer src="/hello-world/js/mermaid-ffd6bf77ad.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        mermaid.initialize({
+            flowchart: { useMaxWidth: true }
+        });
+    });
+</script>
+
+
+
+<pre class="gblog-mermaid mermaid text-center">
+graph TD
+    id1((開始))
+    id2[hugoでサイトを作る]
+    id3[gitでgithubへファイルをアップロード]
+    id4((公開))
+    id1 --> id2 --> id3 --> id4
+</pre>
+
+<div class="gblog-post__anchorwrap"><h2 id="hugoでサイトを作る">hugoでサイトを作る<a data-clipboard-text="https://nitfc.github.io/hello-world/posts/2021/03/02/howto_upload/#hugoでサイトを作る" class="gblog-post__anchor gblog-post__anchor--right clip" aria-label="Anchor hugoでサイトを作る" href="#hugoでサイトを作る"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>とりあえず，何か作ります。<code>hugo</code>コマンドでサイトを構築しておきます（publicディレクトリにサイト公開に必要なファイルが生成されます）。</p>
+<blockquote class="gblog-hint warning">
+  <p><strong>重要</strong><br>
+githubではWebサイトを公開するときに，Jekyllを使って処理が行われます。公開に必要なファイルは，hugoを使ってローカルで構築されているため，githubのJekyllで再度処理されると不都合が生じます。</p>
+<p>そこで<code>public</code>ディレクトリ内に<code>.nojekyll</code>ファイルを作成します。これによりgithubのJekyllによる処理を抑制します。</p>
+
+</blockquote>
+
+<div class="gblog-post__anchorwrap"><h2 id="gitのセットアップ">gitのセットアップ<a data-clipboard-text="https://nitfc.github.io/hello-world/posts/2021/03/02/howto_upload/#gitのセットアップ" class="gblog-post__anchor gblog-post__anchor--right clip" aria-label="Anchor gitのセットアップ" href="#gitのセットアップ"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>gitがインストールされていることが前提条件です。</p>
+<ol>
+<li>
+<p>サイトのトップディレクトリでgitを初期化する</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> git init
+</code></pre></div></li>
+<li>
+<p>公開ディレクトリ(ここではpublic)をgithubのリポジトリと関連付ける</p>
+<p>submoduleコマンドを使って，hugoサイトのpublicディレクトリをgithubの任意のリポジトリと関連付ける。hugoサイトのトップディレクトリで以下のコマンドを実行する。</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> git submodule add -b master https://github.com/nitfc/hello-world public
+</code></pre></div><p>ここで，https://github.com/nitfc/hello-worldはgithubのリポジトリ。</p>
+</li>
+</ol>
+<div class="gblog-post__anchorwrap"><h2 id="ファイルのアップロード">ファイルのアップロード<a data-clipboard-text="https://nitfc.github.io/hello-world/posts/2021/03/02/howto_upload/#ファイルのアップロード" class="gblog-post__anchor gblog-post__anchor--right clip" aria-label="Anchor ファイルのアップロード" href="#ファイルのアップロード"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>gitコマンドを使って，githubリポジトリにファイルをアップロードする。</p>
+<ol>
+<li>
+<p>publicディレクトリのファイルをcommit</p>
+<p>publicディレクトリに移動。</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> cd public
+</code></pre></div><p><code>git add</code>コマンドを使ってpublicディレクトリのすべてのファイルを登録する。<code>.</code>はディレクトリ内の全ファイルを指す。次に，<code>git commit</code>コマンドでコミットする。</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> git add .
+<span class="p">&gt;</span> git commit -m <span class="s2">&#34;コメント&#34;</span>
+</code></pre></div></li>
+<li>
+<p>アップロード</p>
+<p>githubのリポジトリに更新されたファイルアップロード</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> git push origin master
+</code></pre></div><blockquote class="gblog-hint danger">
+  <pre><code>アップロードでエラーが出る
+</code></pre>
+
+</blockquote>
+
+<p>githubのユーザー設定で，emailを<strong>非公開</strong>にしていると</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd">remote: error: <span class="s2">&#34;GH007&#34;</span>: Your push would publish a private email address.
+remote: You can make your email public or disable this protection by visiting:
+remote: http://github.com/settings/emails
+To https://github.com/nitfc/hello-world
+! [remote rejected] master -<span class="p">&gt;</span> master (push declined due to email privacy restrictions)
+error: failed to push some refs to &#39;https://github.com/nitfc/hello-world&#39;
+</code></pre></div><p>のような，エラーメッセージが出てアップロードできない。これを回避するには，<a href="https://github.com/settings/emails">ユーザープロファイルのemail設定(https://github.com/settings/emails)</a>にアクセスし，<strong>Keep my email addresses private</strong>に表示されている　8桁の数字+nitfc@users.noreply.github.com のようなemailアドレスをコピーし，ローカルのgitのemailアドレスとして設定する。</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">&gt;</span> git config --global user.email <span class="s2">&#34;8桁の数字+nitfc@users.noreply.github.com&#34;</span>
+</code></pre></div><p>次に，<strong>Keep my email addresses private</strong>の下にある<strong>Block command line pushes that expose my email</strong>のチェックマークを外す。</p>
+<p>再度，<code>git push</code>コマンドでアップロードを行う。</p>
+</li>
+</ol>
+
+        </section>
+    </article>
 
         </main>
 

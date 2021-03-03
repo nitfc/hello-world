@@ -8,28 +8,28 @@
     <lastBuildDate>Wed, 15 Jul 2020 20:00:00 +0200</lastBuildDate><atom:link href="https://nitfc.github.io/hello-world/tags/Documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started</title>
-      <link>https://nitfc.github.io/hello-world/posts/getting-started/</link>
+      <link>https://nitfc.github.io/hello-world/posts/2020/07/15/getting-started/</link>
       <pubDate>Wed, 15 Jul 2020 20:00:00 +0200</pubDate>
       
-      <guid>https://nitfc.github.io/hello-world/posts/getting-started/</guid>
+      <guid>https://nitfc.github.io/hello-world/posts/2020/07/15/getting-started/</guid>
       <description>&lt;p&gt;Geekblog is a simple Hugo theme for personal blogs. It is intentionally designed as a fast and lean theme and may not fit the requirements of complex websites. If a more feature-complete theme is required there are a lot of got alternatives out there. This post helps you to get started with the Geekblog theme, including initial setup and basic configuration.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown syntax</title>
-      <link>https://nitfc.github.io/hello-world/posts/markdown/</link>
+      <link>https://nitfc.github.io/hello-world/posts/2020/07/13/markdown/</link>
       <pubDate>Mon, 13 Jul 2020 20:00:00 +0200</pubDate>
       
-      <guid>https://nitfc.github.io/hello-world/posts/markdown/</guid>
+      <guid>https://nitfc.github.io/hello-world/posts/2020/07/13/markdown/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emoji Support</title>
-      <link>https://nitfc.github.io/hello-world/posts/emojies/</link>
+      <link>https://nitfc.github.io/hello-world/posts/2020/07/13/emojies/</link>
       <pubDate>Mon, 13 Jul 2020 19:00:00 +0200</pubDate>
       
-      <guid>https://nitfc.github.io/hello-world/posts/emojies/</guid>
+      <guid>https://nitfc.github.io/hello-world/posts/2020/07/13/emojies/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
