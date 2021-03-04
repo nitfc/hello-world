@@ -1,6 +1,36 @@
 /* You can add custom styles here. */
 
+/* フォントの定義 */
+
+@font-face {
+    font-family: 'Noto Sans JP Subset';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local("Noto Sans CJK JP Regular"),
+    url('fonts/NotoSansJpSubset-Light.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Noto Sans JP Subset';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: local("Noto Sans CJK JP Bold"),
+    url('fonts/NotoSansJpSubset-Bold.woff2') format('woff2')
+}
+
+/* 幅の設定 */
+
 .container {
     max-width: 48rem !important;
 }
 
+main {
+    /*font-size: 16px;*/
+    text-align: justify;
+}
+
+body {
+    font-family: 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans JP Subset', serif;
+}
