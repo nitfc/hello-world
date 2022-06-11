@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
+        <script src="../js/qrcode.min.js"></script>
+    </head>
+    <body style="margin:0;padding:0">
+        <script>
+            // global
+            let qrcode;
+            let div;
+            let value = "";
+
+            function setup() {	
+                // createCanvas(512, 512);
+  
+                /*
+                div = select("#qrcode");
+                
+                div.style("width", 0.5 * windowWidth);
+                div.style("height", 0.5 * windowWidth);
+                div.style("padding", "2px");
+                div.style("background-color", "grey");
+                */
+
+                let h1 = select("#code");
+                
+                //  qrcode = new QRCode("qrcode");
+                qrcode = new QRCode("qrcode", {
+                    width: 0.5 * windowWidth,
+                    height: 0.5 * windowWidth
+                });
+
+                let params = getURLParams();
+                value = params.code;
+
+                makeCode();
+                h1.html(value);
+            }
+            
+            function draw() {
+
+            }
+
+            function makeCode() {      
+                let url = value;
+                
+                qrcode.makeCode(url);
+            }
+
+
+            function keyPressed() {
+                if(key == '0') {
+                    
+                    div.remove();
+                    
+                    div = createDiv("");
+                    div.id("qrcode");
+                    
+                    div.position(0,0);
+                
+                    qrcode = new QRCode("qrcode");
+                }
+                else if (key == '1') {
+                    makeCode();
+                }
+            }
+        </script>
+
+        <table border="0" style="margin:50px auto">
+            <tr>
+                <td><div id="qrcode"></div></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><h1 id="code" style="font-size:60pt"></h1></td>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>

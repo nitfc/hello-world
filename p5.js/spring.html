@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="grafica.min.js"></script>
+        <script src="./rungeKutta.js"></script>
+        <script src="./spring.js"></script>
+        <script src="./dft.js"></script>
+        <script>
+            let img;
+            let ans = [][2];
+            let x = [];
+            let s;
+            let plot;
+
+            function dxdt(t, x, v) {
+                return v;
+            }
+
+            function d2xdt2(t, x, v) {
+                const m = 1.0;
+                const c = 1.5;
+                const k = 100.0;
+
+                return -(c * v + k * x) / m;
+            }
+
+            //  RungeKutta テスト
+            /*
+            var func = []; 
+
+            //  (dx/dt), x -> x[0], v -> x[1]
+            func[0] = function(t, x) {
+                return x[1];
+            };
+
+            //  (d2x/dt2), x -> x[0], v -> x[1]
+            func[1] = function(t, x) {
+                const m = 0.5;
+                const c = 0.5;
+                const k = 100.0;
+
+                return -(c * x[1] + k * x[0]) / m;
+            };
+
+            var x0 = [];
+            x0[0] = 1;
+            x0[1] = 0;
+            */
+
+            //  RungeKutta テスト２
+            var func = []; 
+
+            //  (du1/dt), u1 -> x[0], v1 -> x[1], u2 -> x[2], v2 -> x[3]
+            func[0] = function(t, x) {
+                return x[1];
+            };
+
+            //  (d2u1/dt2), u1 -> x[0], v1 -> x[1], u2 -> x[2], v2 -> x[3]
+            func[1] = function(t, x) {
+                const m = 5;
+                const k = 1000.0;
+
+                return (-2 * k * x[0] + k * x[2]) / m;
+            };
+
+            //  (du2/dt), u1 -> x[0], v1 -> x[1], u2 -> x[2], v2 -> x[3]
+            func[2] = function(t, x) {
+                return x[3];
+            }
+
+            //  (d2u2/dt2), u1 -> x[0], v1 -> x[1], u2 -> x[2], v2 -> x[3]
+            func[3] = function(t, x) {
+                const m = 5;
+                const k = 1000.0;
+
+                return ( k * x[0] - 2 * k * x[2]) / m;
+            };
+
+            //  初期値：
+            var x0 = [];
+            x0[0] = 0.5;
+            x0[1] = 0.5;
+            x0[2] = 0.5;
+            x0[3] = -10.0;
+
+            function preload() {
+                img = loadImage('spring.svg');
+            }
+
+            function setup() {
+                createCanvas(800, 480);
+
+                // ans = RungeKutta2({dxdt: dxdt, d2xdt2: d2xdt2, x0: 1, v0: 0, dt: 0.02, n:512});
+                ans = RungeKutta(func, x0, 0.01, 512);
+                
+                for (let i = 0; i < 512; i++) {
+                    x[i] = ans[i][0];
+                }
+
+                s = dft(x, 0.01);
+
+                console.log(s);
+
+                //  グラフ
+
+                let points = [];
+                let seed = 100 * random();
+
+                for (var i = 0; i < 512 / 2; i++) {
+                    // points[i] = new GPoint(i / 100, ans[i][2])
+                    points[i] = new GPoint(i * s.df, s.Amplitude[i])
+                }
+
+                // Create a new plot and set its position on the screen
+                plot = new GPlot(this);
+                plot.setPos(300, 50);
+
+                // Set the plot title and the axis labels
+                plot.setDim(400, 200);
+                plot.setMar(0, 0, 0, 0);//下，左，上，右
+                // plot.setPoints(points);
+                plot.addLayer("line", points);
+                plot.setXLim(0, 20);
+                // plot.setYLim(-1, 1);
+                plot.getXAxis().setAxisLabelText("time  sec");
+                plot.getLayer("line").setLineColor("#000F");
+                // plot.getLayer("line").setPointColor("#0000");
+
+                plot.setPointColor("#F00");
+                plot.setPointSize(10);
+
+                // plot.getYAxis().setAxisLabelText("y axis");
+                // plot.setTitleText("A very simple example");
+            }
+
+            function draw() {
+                background("#ddd");
+
+                // let a = 25 * Math.sin(frameCount / 20);
+                let a = 50 * ans[frameCount %512][2];
+
+                stroke(102);
+                strokeWeight(5);
+
+                push();
+                translate(50, 50);
+                // rotate(-(0 + 90) * PI / 180);
+                spring({n : 6, length : -a + 150, hook : 20, col: "#0ff9"});
+                circle(0, -a + 150 + 30, 60);
+                pop();
+
+                push();
+                translate(100, 100);
+                rotate(- PI / 2);
+                spring({length: 2 * a + 200, color:{r:204, g:0, b:0}});
+                pop();
+
+                push();
+                rotate(0);
+                translate(200, 200);
+                damper({length: a + 155, pod: 80, hook: 20, diameter: 80});
+                pop();
+
+                /*
+                push();
+                translate(100, 100);
+                for (let i = 0; i < 499; i++) {
+                    line(i, -50 * ans[i][2], i + 1, -50 * ans[i+1][2]);
+                }
+                pop();
+                */
+
+                // Draw it!
+                // plot.setPoints([new GPoint((frameCount %512) / 100, a / 50)]);
+                plot.defaultDraw();
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
